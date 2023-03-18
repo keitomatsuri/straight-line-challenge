@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const centerX = canvas.width / 2;
   const centerY = canvas.height / 2;
-  const distance = 500;
+  const distance = 300;
   const randomAngle = Math.random() * 2 * Math.PI;
 
   const startX = centerX - (distance / 2) * Math.cos(randomAngle);
