@@ -4,11 +4,12 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #121212;
 }
 
 canvas {
   border: 1px solid #000;
+  border-color: #ff0050;
 }
 
 #scoreDisplay {

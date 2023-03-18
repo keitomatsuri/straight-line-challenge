@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   canvas.freeDrawingBrush.width = 5;
-  canvas.freeDrawingBrush.color = "#000000";
+  canvas.freeDrawingBrush.color = "#00f2ea";
 
   const centerX = canvas.width / 2;
   const centerY = canvas.height / 2;
@@ -80,8 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
     top: startY,
     strokeWidth: 5,
     radius: 10,
-    fill: "green",
-    stroke: "green",
+    fill: "#ff0050",
+    stroke: "#ff0050",
     originX: "center",
     originY: "center",
     hasControls: false,
@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
     top: endY,
     strokeWidth: 5,
     radius: 10,
-    fill: "red",
-    stroke: "red",
+    fill: "#ff0050",
+    stroke: "#ff0050",
     originX: "center",
     originY: "center",
     hasControls: false,
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const instructions = document.createElement("div");
   instructions.id = "instructions";
   instructions.innerHTML =
-    "Draw a line between the green and red points. Your score depends on the straightness of the line.";
+    "Draw a line between two points. Your score depends on the straightness of the line.";
   document.body.appendChild(instructions);
 
   canvas.on("path:created", function (e) {
