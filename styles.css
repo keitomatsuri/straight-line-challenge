@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+canvas {
+  border: 1px solid #000;
+}
+
+#scoreDisplay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+#instructions {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  text-align: center;
+  max-width: 80%;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #canvasContainer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
